@@ -17,7 +17,7 @@ class _TinyViolinState extends State<TinyViolin> {
   }
 
   Future<void> stopViolin() async {
-    await player.stop();
+    player.stop();
   }
 
   @override
@@ -35,14 +35,14 @@ class _TinyViolinState extends State<TinyViolin> {
               onTap: () {
                 playViolin();
               },
-              onTapCancel: () {
+              onSecondaryTap: () {
                 stopViolin();
               },
               child: const Padding(
                 padding: EdgeInsets.all(20),
                 child: Image(
                   width: 500,
-                  image: AssetImage('violin.png'),
+                  image: AssetImage('assets/violin.png'),
                 ),
               ),
             ),
