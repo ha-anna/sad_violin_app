@@ -1,0 +1,28 @@
+name: sad_violin_app
+description: 'A very tiny and very sad violin for very sad situations.'
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  audioplayers: ^6.0.0
+  splash_view: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/violin.png
+    - assets/violin-bow.png
+    - assets/audio/sad-violin.mp3
+    - assets/audio/sad-violin.wav
